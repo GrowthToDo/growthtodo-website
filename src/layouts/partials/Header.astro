@@ -1,5 +1,4 @@
 ---
-import Logo from "@/components/Logo.astro";
 import menu from "@/config/menu.json";
 
 export interface ChildNavigationLink {
@@ -20,10 +19,13 @@ const { pathname } = Astro.url;
 
 <header class="header">
   <nav class="navbar container">
-    <!-- logo -->
+    <!-- brand (text-only, no logo icon) -->
     <div class="order-0">
-      <Logo />
+      <a href="/" class="text-xl font-semibold text-dark">
+        GrowthToDo
+      </a>
     </div>
+
     <!-- navbar toggler -->
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label
@@ -45,7 +47,8 @@ const { pathname } = Astro.url;
         <title>Menu Close</title>
         <polygon
           points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-          transform="rotate(45 10 10)"></polygon>
+          transform="rotate(45 10 10)"
+        ></polygon>
       </svg>
     </label>
     <!-- /navbar toggler -->
@@ -58,7 +61,7 @@ const { pathname } = Astro.url;
         main.map((menu) => (
           <>
             {menu.hasChildren ? (
-              <li class="nav-item nav-dropdown group relative cursor-pointer  dropdown-button">
+              <li class="nav-item nav-dropdown group relative cursor-pointer dropdown-button">
                 <span
                   class={`nav-link inline-flex items-center ${
                     menu.children?.map(({ url }) => url).includes(pathname) ||
@@ -110,15 +113,8 @@ const { pathname } = Astro.url;
           </>
         ))
       }
-      <li class="nav-item mt-2 lg:hidden">
-        <a class="btn btn-white btn-sm border-border" href="/signin">
-          Sing Up Now</a
-        >
-      </li>
     </ul>
-    <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
-      <a class="btn btn-white btn-sm" href="/signin"> Sing Up Now</a>
-    </div>
+    {/* No header CTA for now */}
   </nav>
 </header>
 
@@ -132,7 +128,7 @@ const { pathname } = Astro.url;
     });
   });
 
-  //sticky header
+  // sticky header
   document.addEventListener("astro:page-load", () => {
     const header = document.querySelector(".header");
     window.addEventListener("scroll", () => {

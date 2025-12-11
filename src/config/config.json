@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "GrowthToDo",
+    "title": "GrowthToDo — Calm, profitable online businesses",
     "base_url": "https://growthtodo.com/",
     "base_path": "/",
     "trailing_slash": false,
@@ -18,32 +18,32 @@
   },
 
   "call_to_action": {
-    "title": "Helping teams in the world with focus",
-    "description": "Join a Community of Builders Creating Profitable, Stress-Free Online Businesses. Learn, Grow, and Thrive – Without the Hustle.",
+    "title": "Build a calm, profitable online business",
+    "description": "Work on the right products, with the right systems, at a pace you can actually sustain. Join a small circle of founders building leverage without burning out.",
     "button": {
-      "label": "Apply to Join",
-      "link": "https://themefisher.com/astro-themes/pinwheel-astro"
+      "label": "Book a diagnostic call",
+      "link": "https://cal.com/gautham-8bdvdx/30min"
     }
   },
 
   "disqus": {
-    "enable": true,
-    "shortname": "themefisher-template",
+    "enable": false,
+    "shortname": "",
     "settings": {}
   },
 
   "params": {
-    "footer_description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
-    "email": "info@andromeda.io",
-    "location": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
-    "phone": "+704-555-0127",
-    "contact_form_action": "#",
-    "copyright": "Copyright © 2023 a theme by [Themefisher](https://themefisher.com)"
+    "footer_description": "GrowthToDo helps founders and operators design calm, profitable online businesses through consulting, products, and practical teaching.",
+    "email": "gauthamail@gmail.com",
+    "location": "Bengaluru, India",
+    "phone": "",
+    "contact_form_action": "mailto:gauthamail@gmail.com",
+    "copyright": "© 2025 GrowthToDo. All rights reserved."
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Gautham · GrowthToDo",
     "meta_image": "/images/og-image.png",
-    "meta_description": "pinwheel astro"
+    "meta_description": "GrowthToDo is a home for founders who want to build calm, profitable online businesses through focused consulting, products, and teaching."
   }
 }
